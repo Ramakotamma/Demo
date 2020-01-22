@@ -15,8 +15,8 @@ public class RobotClass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		WebElement s=driver.findElement(By.id("email"));
-		s.sendKeys("rama");
+	driver.findElement(By.id("email")).sendKeys("Rama");
+		
 		Actions a=new Actions(driver);
 		a.moveToElement(s).perform();
 		a.doubleClick(s).perform();
