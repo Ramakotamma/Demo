@@ -19,6 +19,7 @@ public static void main(String[] args) throws InterruptedException {
 		WebElement n=driver.findElement(By.id("Gmail"));
 		Actions b=new Actions(driver);
 		b.moveToElement(n).perform();
+		System.out.println("run code successfully");
 		b.click();
 	}
 
